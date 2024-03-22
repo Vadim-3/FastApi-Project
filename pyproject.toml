@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "fastapi-project"
+version = "0.1.0"
+description = ""
+authors = ["Vadim-3 <128088822+Vadim-3@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.104.1"
+uvicorn = {version = "^0.23.2", extras = ["standard"]}
+sqlalchemy = "^2.0.22"
+psycopg2 = "^2.9.9"
+alembic = "^1.12.1"
+pydantic = {version = "^2.4.2", extras = ["email"]}
+libgravatar = "^1.0.4"
+python-jose = {version = "^3.3.0", extras = ["cryptography"]}
+passlib = {version = "^1.7.4", extras = ["bcrypt"]}
+python-multipart = "^0.0.6"
+fastapi-mail = "^1.4.1"
+cloudinary = "^1.36.0"
+redis = "^5.0.1"
+pydantic-settings = "^2.0.3"
+qrcode = {version = "^7.4.2", extras = ["pil"]}
+coverage = "^7.3.2"
+pytest = "^8.1.1"
+
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "^7.2.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
